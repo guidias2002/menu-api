@@ -21,7 +21,7 @@ public class FoodService {
 
     public List<ResponseFoodDto> listFoods(){
         List<ResponseFoodDto> foods = this.foodRepository.findAll()
-                .stream().map((food) -> new ResponseFoodDto(food.getTitle(), food.getImage(), food.getPrice()))
+                .stream().map((food) -> new ResponseFoodDto(food.getId(), food.getTitle(), food.getImage(), food.getPrice()))
                 .toList();
 
         return foods;

@@ -1,4 +1,6 @@
 package com.example.cardapio.food;
 
-public record ResponseFoodDto(String title, String image, Integer price) {
+import java.util.UUID;
+
+public record ResponseFoodDto(UUID id, String title, String image, Integer price) {
 }

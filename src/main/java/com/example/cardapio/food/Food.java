@@ -25,7 +25,6 @@ public class Food {
 
 
     public Food(CreateFoodDto data) {
-        this.id = data.id();
         this.title = data.title();
         this.image = data.image();
         this.price = data.price();
